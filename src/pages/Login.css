@@ -39,8 +39,9 @@ body {
 }
 
 .login-header img {
-  width: 100px;
+  width: 200px;
   margin-bottom: 10px;
+  align-items: center;
 }
 
 .login-header h2 {
@@ -87,3 +88,47 @@ button {
 button:hover {
   background-color: #003a75;
 }
+
+/* Arka plan resmi ekle ve karart */
+.login-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+
+  /* Arka plan resmi */
+  background-image: url("../components/buyukpostane.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+/* Arka planı biraz karart, okunabilirliği artır */
+.login-page::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.75); /* saydam beyaz katman */
+  z-index: 0;
+}
+
+/* Kart içeriği ön plana getir */
+.login-card {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 420px;
+  background-color: #ffffff;
+  padding: 40px 30px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px var(--card-shadow);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+

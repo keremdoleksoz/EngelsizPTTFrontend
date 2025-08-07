@@ -42,7 +42,7 @@ function Login() {
       <div className="login-card">
         <div className="login-header">
           <img src={pttlogo} alt="PTT Logo" />
-          <h2>PTT Giriş Paneli</h2>
+          <h2>PTT Erişilebilirlik Formu Giriş Paneli</h2>
         </div>
         <form onSubmit={handleLogin}>
           <input
