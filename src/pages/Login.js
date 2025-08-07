@@ -28,7 +28,7 @@ function Login() {
 
   return (
     <div className="login-page">
-      {/* 🔔 Toast bildirimi */}
+      {/* Toast bildirimi */}
       <ToastContainer
         position="top-right"
         autoClose={3000}

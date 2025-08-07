@@ -38,7 +38,6 @@ body::before {
   z-index: 1;
 }
 
-/* ✅ Logo ve Başlık */
 .form-header {
   text-align: center;
   margin-bottom: 25px;
@@ -56,7 +55,7 @@ body::before {
   margin: 0;
 }
 
-/* ✅ Kategori başlığı */
+
 .category-title {
   font-size: 17px;
   font-weight: 600;
@@ -163,7 +162,6 @@ body::before {
   background-color: #003a6b;
 }
 
-/* Toast kutusunun içeriğini düzgün hizalamak için */
 .Toastify__toast {
   display: flex !important;
   align-items: center !important;
@@ -172,7 +170,6 @@ body::before {
   border-radius: 8px !important;
 }
 
-/* Kapatma butonunun (X) düzgün hizalanması */
 .Toastify__close-button {
   position: relative !important;
   top: 0 !important;

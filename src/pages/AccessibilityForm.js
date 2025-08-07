@@ -3,9 +3,11 @@ import axios from "axios";
 import "./AccessibilityForm.css";
 import pttlogo from "../components/pttlogo.png";
 import { ToastContainer, toast } from "react-toastify";
-
+import { useNavigate } from "react-router-dom";
 
 const AccessibilityForm = () => {
+  const navigate = useNavigate();
+
   const [showNotice, setShowNotice] = useState(true);
   const [formData, setFormData] = useState({
     has_ramp: "",
@@ -42,6 +44,12 @@ const AccessibilityForm = () => {
         },
       });
       toast.success("Form başarıyla gönderildi.");
+
+      
+      setTimeout(() => {
+        navigate("/thanks");
+      }, 1000);
+
     } catch (err) {
       console.error(err.response?.data || err);
       toast.error("Form gönderilirken bir hata oluştu.");
@@ -50,7 +58,6 @@ const AccessibilityForm = () => {
 
   return (
     <>
-      {/* 🔔 Toast sistemi */}
       <ToastContainer
         position="top-right"
         autoClose={3000}
@@ -58,8 +65,8 @@ const AccessibilityForm = () => {
         closeOnClick
         pauseOnHover
         draggable
-        theme="light" />
-
+        theme="light"
+      />
 
       {showNotice && (
         <div className="notice-overlay">
