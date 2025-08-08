@@ -90,7 +90,7 @@ const AccessibilityForm = () => {
         <form onSubmit={handleSubmit}>
           <h3 className="category-title">Bedensel Engelliler İçin</h3>
           <FormGroup label="Engelli Rampası" name="has_ramp" value={formData.has_ramp} onChange={handleChange} />
-          <FormGroup label="Tekerlekli Sandalye Erişimi" name="has_wheelchair_access" value={formData.has_wheelchair_access} onChange={handleChange} />
+          <FormGroup label="Tekerlekli Sandalyeye Uygun Vezne" name="has_wheelchair_access" value={formData.has_wheelchair_access} onChange={handleChange} />
           <FormGroup label="Engelli Otoparkı" name="has_disable_parking" value={formData.has_disable_parking} onChange={handleChange} />
           <FormGroup label="Otomatik Kapı" name="has_automatic_door" value={formData.has_automatic_door} onChange={handleChange} />
           <FormGroup label="Eğitimli Personel Desteği" name="has_personel_support_physical" value={formData.has_personel_support_physical} onChange={handleChange} />

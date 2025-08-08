@@ -59,7 +59,7 @@ function Login() {
             value={username}
             onChange={handleUsernameChange}
             inputMode="numeric"
-            maxLength={10} 
+            maxLength={6} 
           />
           <input
             type="password"
