@@ -8,8 +8,16 @@ import "react-toastify/dist/ReactToastify.css";
 
 function Login() {
   const navigate = useNavigate();
-  const [username, setUsername] = useState("");
+  const [username, setUsername] = useState(""); 
   const [password, setPassword] = useState("");
+
+  
+  const handleUsernameChange = (e) => {
+    const value = e.target.value;
+    if (/^\d*$/.test(value)) {
+      setUsername(value);
+    }
+  };
 
   const handleLogin = async (e) => {
     e.preventDefault();
@@ -47,9 +55,11 @@ function Login() {
         <form onSubmit={handleLogin}>
           <input
             type="text"
-            placeholder="Kullanıcı Adı"
+            placeholder="Sicil No"
             value={username}
-            onChange={(e) => setUsername(e.target.value)}
+            onChange={handleUsernameChange}
+            inputMode="numeric"
+            maxLength={10} 
           />
           <input
             type="password"

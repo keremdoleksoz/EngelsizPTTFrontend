@@ -89,7 +89,6 @@ button:hover {
   background-color: #003a75;
 }
 
-/* Arka plan resmi ekle ve karart */
 .login-page {
   min-height: 100vh;
   display: flex;
@@ -97,7 +96,7 @@ button:hover {
   align-items: center;
   padding: 20px;
 
-  /* Arka plan resmi */
+
   background-image: url("../components/buyukpostane.png");
   background-size: cover;
   background-position: center;
@@ -105,7 +104,7 @@ button:hover {
   position: relative;
 }
 
-/* Arka planı biraz karart, okunabilirliği artır */
+
 .login-page::before {
   content: "";
   position: absolute;
@@ -113,11 +112,11 @@ button:hover {
   left: 0;
   height: 100%;
   width: 100%;
-  background-color: rgba(255, 255, 255, 0.75); /* saydam beyaz katman */
+  background-color: rgba(255, 255, 255, 0.75); 
   z-index: 0;
 }
 
-/* Kart içeriği ön plana getir */
+
 .login-card {
   position: relative;
   z-index: 1;
@@ -131,4 +130,6 @@ button:hover {
   flex-direction: column;
   align-items: center;
 }
+
+
 
