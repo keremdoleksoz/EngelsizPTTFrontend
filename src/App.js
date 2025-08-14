@@ -8,10 +8,10 @@ function App() {
   return (
     <Router>
       <Routes>
-        {/* Giriş Sayfası */}
+        {/* Login Page */}
         <Route path="/" element={<Login />} />
 
-        {/* Erişilebilirlik Formu */}
+        {/* Accessibility Form */}
         <Route
           path="/form"
           element={
@@ -21,7 +21,7 @@ function App() {
           }
         />
 
-        {/* Teşekkür Sayfası */}
+        {/* Thanks Page */}
         <Route
           path="/thanks"
           element={
